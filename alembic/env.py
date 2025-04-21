@@ -1,6 +1,6 @@
 from app.db.connection import Base
 from app.db.connection import DATABASE_URL
-from app.db.book_model import Book
+from app.db.models.book import Book
 
 from logging.config import fileConfig
 

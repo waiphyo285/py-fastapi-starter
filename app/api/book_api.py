@@ -2,10 +2,13 @@ from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 
 from app.db.connection import get_db
-from app.db.book_schema import BookCreate, BookRead
-from app.services.book_service import create_book, get_books, get_book, delete_book
+from app.db.schemas.book import BookCreate, BookRead
+from app.services.auth.dependency import jwt_required
+from app.services.book import create_book, get_books, get_book, delete_book
 
-book_router = APIRouter()
+book_router = APIRouter(
+    dependencies=[Depends(jwt_required)] 
+)
 
 @book_router.post("", response_model=BookRead)
 def create(book: BookCreate, db: Session = Depends(get_db)):
