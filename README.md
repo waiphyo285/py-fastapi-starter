@@ -23,26 +23,33 @@ deactivate
 pip3 install -r requirements.txt
 ```
 
-### 4. Start Server
-
-```
-uvicorn app.main:app --reload --port 9001
-
-[ OR ]
-
-python3 -m app.main
-```
-
-### 5. Update requirements (opt)
+### 4. Update requirements (opt)
 
 ```
 pip3 freeze > requirements.txt
 ```
 
-### 6. Database migration (opt)
+### 5. Database migration (if added)
 
 ```
 alembic init alembic
-alembic revision --autogenerate -m "init"
+alembic revision --autogenerate -m "related message"
 alembic upgrade head
+```
+
+### 6. Start Server
+
+```
+python3 -m app.main
+
+[ OR ]
+
+uvicorn app.main:app --reload --port 9001
+
+[ OR ]
+
+docker compose up --build -d
+docker compose down
+docker ps
+docker logs fast_openai
 ```
