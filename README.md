@@ -1,15 +1,15 @@
 ## ✅ Features
 
-| Feature                       | Description                                                                  |
-| ----------------------------- | ---------------------------------------------------------------------------- |
-| 🔌 **Modular API Routers**    | Organized under `/api`, cleanly separated.                                   |
-| 🏢 **Multi-Tenancy (Per DB)** | Resolved via `X-Tenant-ID` header → connects to correct DB.                  |
-| 📚 **SQLAlchemy ORM**         | Models for `Book`, `AuditLog`.                                               |
-| 📦 **CRUD APIs**              | Create, Read, Delete for `Book` (tenant-aware).                              |
-| 🧠 **Chatbot Hook**           | OpenAI/agent-ready lifecycle integration.                                    |
-| 🧾 **Audit Logging (Event)**  | Auto logs to `AuditLog` after inserts via event listeners.                   |
-| 🧱 **JWT Auth Skeleton**      | `jwt.py`, `jwt_auth.py`, `auth_api.py` ready for token-based authentication. |
-| 📓 **Middlewares**            | Easy to add logging/auth/performance profiling.                              |
+| Feature              | Description                                                        |
+| -------------------- | ------------------------------------------------------------------ |
+| 🔌 Modular Routers   | Organized under `/api`, cleanly separated.                         |
+| 📚 SQLAlchemy ORM    | Includes models for `Book`, `AuditLog`.                            |
+| 📦 CRUD APIs         | Create, Read, Delete for `Book` (tenant-aware).                    |
+| 🏢 Multi-Tenancy     | Resolved via `X-Tenant-ID` header → connects to correct DB.        |
+| 🧠 Chatbot Hook      | OpenAI/agent-ready lifecycle integration.                          |
+| 🧾 Audit Log (Event) | Auto logs to persit after inserts via event listeners.             |
+| 🧱 JWT Auth Skeleton | `jwt.py`, `jwt_auth.py`, `auth_api.py` ready for token-based auth. |
+| 📓 Middlewares       | Easy to add logging/auth/performance profiling.                    |
 
 ## 🚀 Quick Start
 
