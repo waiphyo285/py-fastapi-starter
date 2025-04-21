@@ -4,6 +4,7 @@ from contextlib import asynccontextmanager
 from app.middlewares.watching_dog import WatchDogMiddleware
 
 from app.chat.open_ai import await_chat_cli
+from app.db.event_listener import register_listeners
 
 from app.api.mock_api import mock_router
 from app.api.auth_api import auth_router
@@ -13,6 +14,7 @@ from app.api.book_api import book_router
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # await await_chat_cli()
+    register_listeners()
     yield
 
 app = FastAPI(lifespan=lifespan)

@@ -7,6 +7,7 @@ DATABASE_URL = "mysql+pymysql://root:root@localhost:33060/fast_openai_db"
 Base = declarative_base()
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+# SessionLocal = sessionmaker(class_=AuditableSession, autocommit=False, autoflush=False, bind=engine)
 
 def get_db():
     db =SessionLocal()

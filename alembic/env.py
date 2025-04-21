@@ -1,6 +1,7 @@
 from app.db.connection import Base
 from app.db.connection import DATABASE_URL
 from app.db.models.book import Book
+from app.db.models.audit import AuditLog
 
 from logging.config import fileConfig
 
