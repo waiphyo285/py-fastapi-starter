@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 
-from app.db.connection import get_db
+from app.db.tenants.resolver import get_db
 from app.db.schemas.book import BookCreate, BookRead
 from app.services.auth.dependency import jwt_required
 from app.services.book import create_book, get_books, get_book, delete_book
