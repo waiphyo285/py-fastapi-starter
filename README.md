@@ -14,6 +14,7 @@ cd openai-fastapi
 ```
 python3 -m venv venv
 source venv/bin/activate
+deactivate
 ```
 
 ### 3. Install Dependencies
@@ -25,7 +26,7 @@ pip3 install -r requirements.txt
 ### 4. Start Server
 
 ```
-uvicorn app.main:app --reload --port 8001
+uvicorn app.main:app --reload --port 9001
 
 [ OR ]
 
@@ -36,4 +37,12 @@ python3 -m app.main
 
 ```
 pip3 freeze > requirements.txt
+```
+
+### 6. Database migration (opt)
+
+```
+alembic init alembic
+alembic revision --autogenerate -m "init"
+alembic upgrade head
 ```
