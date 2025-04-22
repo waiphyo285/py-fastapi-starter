@@ -3,7 +3,7 @@ from fastapi import APIRouter, Query, HTTPException, status
 from app.core.http import HttpClient
 from app.core.http_client_mock import get_http_client
 
-mock_router = APIRouter()
+router = APIRouter()
 
 # Endpoint to map requests to external APIs
 async def map_request(tag: str, params: dict = {}, data: dict = {}, method: str = "GET"):
@@ -42,10 +42,10 @@ async def map_request(tag: str, params: dict = {}, data: dict = {}, method: str 
         raise HTTPException(status_code=status.HTTP_501_NOT_IMPLEMENTED, detail=f"Error in mapping the request: {str(e)}")
 
 
-@mock_router.get("/test")
+@router.get("/test")
 def home():
     return {"data": "Test from FastAPI!"}
 
-@mock_router.get("/test_mapping")
+@router.get("/test_mapping")
 async def test_mapping(tag: str = Query(..., description="Tag to map to an API")):
     return await map_request(tag=tag)

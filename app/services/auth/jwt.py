@@ -17,7 +17,6 @@ def create_token(data: dict, expires_delta: timedelta | None = None):
 def verify_token(token: str):
     try:
         payload = jwt.decode(token, JWT_SECRET, algorithms=[JWT_ALGO])
-        print(payload)
         return payload
     except JWTError:
        raise HTTPException(
