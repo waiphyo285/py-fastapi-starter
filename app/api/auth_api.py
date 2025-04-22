@@ -2,7 +2,7 @@ from fastapi import Request
 from pydantic import BaseModel
 from fastapi import APIRouter, HTTPException, status
 
-from app.core.rate_limiter import limiter
+from app.core.limiter import limiter
 from app.services.auth.jwt import create_token
 
 router = APIRouter()

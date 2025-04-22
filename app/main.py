@@ -7,19 +7,26 @@ from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 
 from app.core.config import config
+from app.core.limiter import limiter
+from app.core.scheduler import scheduler
+
 from app.chat.open_ai import await_chat_cli
 from app.api.auto_loader import load_api_routers
-from app.db.event_listener import register_listeners
-from app.core.rate_limiter import limiter
+from app.core.scheduler import setup_cron_jobs
+from app.db.event_listener import event_listeners
 from app.middlewares.watch_dog import WatchDogMiddleware
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # await await_chat_cli()
-    register_listeners()
+    event_listeners()
+    setup_cron_jobs()
+    scheduler.start()
     yield
+    scheduler.shutdown()
 
 app = FastAPI(lifespan=lifespan)
+
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 

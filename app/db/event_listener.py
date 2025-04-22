@@ -15,5 +15,5 @@ def after_insert_listener(mapper, connection, target):
     session.commit()
 
 
-def register_listeners():
+def event_listeners():
     event.listen(Book, 'after_insert', after_insert_listener)
