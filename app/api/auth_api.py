@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, status
 from pydantic import BaseModel
 from app.services.auth.jwt import create_token
 
@@ -16,7 +16,7 @@ class TokenResponse(BaseModel):
 def login(request: LoginRequest):
     # This is mocked. Replace with actual user DB check.
     if request.username != "admin" or request.password != "secret":
-        raise HTTPException(status_code=401, detail="Invalid username or password")
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid username or password")
 
     token = create_token({"sub": request.username})
     return {"access_token": token, "token_type": "bearer"}

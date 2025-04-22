@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
-from fastapi import Request, HTTPException
+from fastapi import Request, HTTPException, status
 from contextvars import ContextVar
 
 TENANT_DB_MAP = {
@@ -14,9 +14,9 @@ _session_ctx = ContextVar("session_ctx", default=None)
 def get_tenant_id(request: Request) -> str:
     tenant_id = request.headers.get("X-Tenant-ID", "default")
     if not tenant_id:
-        raise HTTPException(status_code=400, detail="Missing X-Tenant-ID header")
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Missing X-Tenant-ID header")
     if tenant_id not in TENANT_DB_MAP:
-        raise HTTPException(status_code=404, detail="Invalid tenant")
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid tenant")
     return tenant_id
 
 def get_db(request: Request) -> Session:

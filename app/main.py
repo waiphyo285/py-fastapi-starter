@@ -1,7 +1,7 @@
 
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-from app.middlewares.watching_dog import WatchDogMiddleware
+from app.middlewares.watch_dog import WatchDogMiddleware
 
 from app.chat.open_ai import await_chat_cli
 from app.db.event_listener import register_listeners

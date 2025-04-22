@@ -1,5 +1,4 @@
-from fastapi import APIRouter, Query, HTTPException, Depends
-from httpx import AsyncClient, Request
+from fastapi import APIRouter, Query, HTTPException, status
 
 from app.core.http import HttpClient
 from app.core.http_client_mock import get_http_client
@@ -33,14 +32,14 @@ async def map_request(tag: str, params: dict = {}, data: dict = {}, method: str 
             response = await client.delete(tag, data=data)
 
         else:
-            raise HTTPException(status_code=400, detail="Invalid HTTP method")
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid HTTP method")
 
         # Return the response as JSON
         return response.json()
 
     except Exception as e:
         # Handle any exception that may arise during the request
-        raise HTTPException(status_code=500, detail=f"Error in mapping the request: {str(e)}")
+        raise HTTPException(status_code=status.HTTP_501_NOT_IMPLEMENTED, detail=f"Error in mapping the request: {str(e)}")
 
 
 @mock_router.get("/test")

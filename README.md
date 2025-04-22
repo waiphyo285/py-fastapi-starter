@@ -4,7 +4,7 @@
 | -------------------- | ------------------------------------------------------------------ |
 | 🔌 Modular Routers   | Organized under `/api`, cleanly separated.                         |
 | 📚 SQLAlchemy ORM    | Includes models for `Book`, `AuditLog`.                            |
-| 📦 CRUD APIs         | Create, Read, Delete for `Book` (tenant-aware).                    |
+| 📦 CRUD APIs         | Create, Read, Update, Delete for `Book` (tenant-aware).            |
 | 🏢 Multi-Tenancy     | Resolved via `X-Tenant-ID` header → connects to correct DB.        |
 | 🧠 Chatbot Hook      | OpenAI/agent-ready lifecycle integration.                          |
 | 🧾 Audit Log (Event) | Auto logs to persit after inserts via event listeners.             |
