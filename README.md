@@ -66,3 +66,7 @@ docker compose down
 docker ps
 docker logs fast_openai
 ```
+
+### 7. API Docs
+
+After running application, navigate to `/redoc`, can download & import to postman!
