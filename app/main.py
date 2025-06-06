@@ -11,10 +11,10 @@ from app.core.config import config
 from app.core.limiter import limiter
 from app.core.scheduler import scheduler
 
-from app.chat.open_ai import await_chat_cli
-from app.api.auto_loader import load_api_routers
 from app.core.scheduler import setup_cron_jobs
-from app.db.event_listener import event_listeners
+from app.addons.chat.open_ai import await_chat_cli
+from app.controllers.auto_loader import load_api_routers
+from app.databases.event_listener import event_listeners
 from app.middlewares.watch_dog import WatchDogMiddleware
 
 @asynccontextmanager

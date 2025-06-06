@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from app.db.models.book import Book
-from app.db.schemas.book import BookCreate
+from app.databases.models.book import Book
+from app.databases.schemas.book import BookCreate
 
 def create_book(db: Session, book: BookCreate):
     new_book = Book(**book.model_dump())

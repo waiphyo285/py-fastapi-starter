@@ -1,7 +1,7 @@
 from sqlalchemy import event
-from app.db.models.book import Book
-from app.db.models.audit import AuditLog
-from app.db.connection import SessionLocal
+from app.databases.models.book import Book
+from app.databases.models.audit import AuditLog
+from app.databases.connection import SessionLocal
 
 def after_insert_listener(mapper, connection, target):
     session = SessionLocal()

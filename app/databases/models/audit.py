@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Text, DateTime, func
 from sqlalchemy.ext.declarative import declarative_base
 
-from app.db.connection import Base
+from app.databases.connection import Base
 
 class AuditLog(Base):
     __tablename__ = "audit_logs"
