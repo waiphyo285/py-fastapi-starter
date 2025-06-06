@@ -1,6 +1,6 @@
 from apscheduler.triggers.cron import CronTrigger
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from app.core.jobs.sample_job import sample_cron_task
+from core.jobs.sample_job import sample_cron_task
 
 scheduler = AsyncIOScheduler()
 

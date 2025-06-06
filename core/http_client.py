@@ -1,5 +1,5 @@
 from httpx import AsyncClient
-from app.core.config import config
+from core.config import config
 
 async def get_http_client(access_token: str = None) -> AsyncClient:
     base_url = config.mock_api_url

@@ -1,7 +1,7 @@
 import openai
 
-from app.core.config import config
-from app.core.logger import logger
+from core.config import config
+from core.logger import logger
 
 openai.api_key = config.openai_key
 

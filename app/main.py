@@ -7,11 +7,11 @@ from slowapi import _rate_limit_exceeded_handler
 from slowapi.middleware import SlowAPIMiddleware
 from slowapi.errors import RateLimitExceeded
 
-from app.core.config import config
-from app.core.limiter import limiter
-from app.core.scheduler import scheduler
+from core.config import config
+from core.limiter import limiter
+from core.scheduler import scheduler
+from core.scheduler import setup_cron_jobs
 
-from app.core.scheduler import setup_cron_jobs
 from app.addons.chat.open_ai import await_chat_cli
 from app.controllers.auto_loader import load_api_routers
 from app.databases.event_listener import event_listeners

@@ -1,8 +1,7 @@
 from fastapi import HTTPException, status
 from jose import JWTError, jwt
 from datetime import datetime, timedelta
-
-from app.core.config import config
+from core.config import config
 
 JWT_ALGO =  config.jwt_algo
 JWT_SECRET = config.jwt_secrect
