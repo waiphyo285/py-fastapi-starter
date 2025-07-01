@@ -12,7 +12,7 @@ from core.limiter import limiter
 from core.scheduler import scheduler
 
 
-from app.addons.chat.open_ai import await_chat_cli
+from app.features.chat.open_ai import await_chat_cli
 from app.controllers.auto_loader import load_api_routers
 from app.databases.event_listener import event_listeners
 from app.middlewares.watch_dog import WatchDogMiddleware

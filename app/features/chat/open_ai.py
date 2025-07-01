@@ -13,7 +13,7 @@ def await_chat_cli():
         user_input = input("You: ").strip()
         
         if user_input.lower() == "exit":
-            print("👋 Bye!")
+            print("Bye!")
             break
 
         messages.append({"role": "user", "content": user_input})
@@ -21,7 +21,7 @@ def await_chat_cli():
         try:
             response =  openai.ChatCompletion.create(model="gpt-4o-mini", messages=messages)
             reply = response.choices[0].message.content.strip()
-            print(f"🤖 GPT: {reply}")
+            print(f"GPT: {reply}")
             messages.append({"role": "assistant", "content": reply})
         except Exception as e:
-            print(f"👻 Error: {e}")
+            print(f"Error: {e}")
