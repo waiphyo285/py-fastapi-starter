@@ -1,0 +1,113 @@
+category,sub_category,title,company,start_date,end_date,location,details,repo_name,repo_desc,language,stars,forks,github_created_at
+Personal Info,name,Wai Phyo Naing,,,,,Full-stack software engineer with over 6 years of experience building scalable web applications and ERP systems.,,,,,,
+Personal Info,email,waiphyo.dev@gmail.com,,,,,Primary contact for professional inquiries,,,,,,
+Personal Info,phone,917368400,,,,,Available for project discussions and opportunities in Thailand or remotely.,,,,,,
+Personal Info,website,waiphyo.vercel.app,,,,,Personal portfolio showcasing innovative projects,,,,,,
+Personal Info,github,waiphyo285,,,,,GitHub profile featuring open-source contributions,,,,,,
+Personal Info,linkedin,wai-phyo-naing,,,,,LinkedIn profile highlighting professional experience,,,,,,
+About,Problem Solving,Skilled in resolving complex software challenges with efficient,maintainable solutions,,,,Proven ability to analyze and optimize code for performance and scalability.,,,,,,
+About,Innovation,Passionate about adopting cutting-edge technologies to deliver impactful solutions,,,,,Continuously explore new frameworks and tools to enhance project outcomes.,,,,,,
+About,Leadership,Experienced in mentoring junior developers and leading agile teams,,,,,Led code reviews and improved team efficiency through collaborative workflows.,,,,,,
+About,Summary,Driven software engineer creating scalable,user-focused applications,,,,Specialized in full-stack development with a focus on clean code and modern architectures.,,,,,,
+About,Mindset,Committed to solving real-world problems with practical and innovative approaches,,,,,Emphasize honesty,,,,,,
+About,Education,B.C.Sc Computer Science,University of Computer Studies,2014-12-01,2019-08-01,Meiktila,Graduated with a degree in Computer Science and pursued continuous self-learning in modern tech.,,,,,,
+About,Experience,Over 5 years delivering impactful projects in team and freelance roles,,,,,Contributed to diverse applications from ERP systems to e-commerce platforms.,,,,,,
+About,Work Ethic,Adaptable team player thriving in dynamic,challenging environments,,,,Dedicated to rapid learning and delivering high-quality solutions.,,,,,,
+Core Value,Honesty,Maintain integrity and transparency in all professional collaborations,,,,,Prioritize ethical practices in project execution and team interactions.,,,,,,
+Core Value,Scalability,"Design systems for growth, and performance",maintainability,,,,Build architectures that support long-term scalability and ease of maintenance.,,,,,,
+Core Value,Efficiency,"Optimize code for performance, and maintainability",usability,,,,Focus on streamlined solutions to enhance user experience and system reliability.,,,,,,
+Core Value,Teamwork,Foster collaboration and clear communication in team settings,,,,,Value shared ownership and effective coordination to achieve project goals.,,,,,,
+Core Value,Lifelong Learning,Continuously adopt new technologies and methodologies,,,,,Stay updated with industry trends to deliver cutting-edge solutions.,,,,,,
+Core Value,Ownership,Take full responsibility for delivering complete,high-quality solutions,,,,Proactively drive projects from conception to deployment.,,,,,,
+Core Value,Adaptability,"Quickly master new tools, and workflows",frameworks,,,,Thrive in fast-paced environments with evolving requirements.,,,,,,
+Core Value,Curiosity,Explore innovative approaches to software development,,,,,Driven to discover better methods and technologies for building software.,,,,,,
+Core Value,Collaboration,Champion shared success through strong teamwork,,,,,Promote open communication and collective problem-solving in projects.,,,,,,
+Core Value,Accountability,Deliver on commitments with transparency and reliability,,,,,Ensure consistent progress updates and high-quality deliverables.,,,,,,
+Skills,Programming Languages,JavaScript (ES6+),,,,,Expert in modern JavaScript for full-stack development,,leveraging ES6+ features.,,,,
+Skills,Programming Languages,TypeScript,,,,,Proficient in TypeScript for type-safe backend (Nest.js) and frontend (React/Next.js) applications.,,,,,,
+Skills,Programming Languages,PHP,,,,,Utilized PHP for Odoo ERP customizations and legacy system maintenance.,,,,,,
+Skills,Programming Languages,Python,,,,,Applied Python for scripting and backend development with FastAPI., ,,,,,
+Skills,Programming Languages,Go,,,,,Developed high-performance APIs and microservices using Go’s concurrency features.,,,,,,
+Skills,Back-end,Node.js,,,,,Core platform for building scalable APIs and services in commercial and freelance projects.,,,,,,
+Skills,Back-end,Express.js,,,,,Used Express.js for lightweight RESTful API development in Node.js environments.,,,,,,
+Skills,Back-end,Nest.js,,,,,Built enterprise-grade APIs with Nest.js,,emphasizing modularity and scalability.,,,,
+Skills,Back-end,GraphQL,,,,,Implemented efficient GraphQL APIs using Apollo Server for flexible data querying.,,,,,,
+Skills,Back-end,TypeORM,,,,,Integrated TypeORM for robust object-relational mapping in Nest.js and PostgreSQL projects.,,,,,,
+Skills,Back-end,Prisma,,,,,Utilized Prisma for modern database querying with auto-generated TypeScript types.,,,,,,
+Skills,Back-end,REST API,,,,,Designed RESTful APIs with robust error handling and versioning and documentation.,,,,,,
+Skills,Back-end,FastAPI,,,,,Developed async REST APIs with Python’s FastAPI for rapid,,scalable backend solutions.,,,,
+Skills,DevOps & Tools,Git,,,,,Managed code collaboration and version control for solo and team projects.,,,,,,
+Skills,DevOps & Tools,GitHub,,,,,Hosted projects and CI/CD pipelines on GitHub,,leveraging Actions for automation.,,,,
+Skills,DevOps & Tools,GitLab,,,,,Managed private repositories and CI/CD pipelines using GitLab for team workflows.,,,,,,
+Skills,DevOps & Tools,CI/CD,,,,,Automated testing and deployment with GitHub Actions and GitLab CI pipelines.,,,,,,
+Skills,DevOps & Tools,Docker,,,,,Containerized applications for consistent development and production environments.,,,,,,
+Skills,DevOps & Tools,AWS Services,,,,,Deployed cloud-based solutions using AWS EC2,,,,,,
+Skills,DevOps & Tools,Digital Ocean,,,,,Hosted full-stack apps on DigitalOcean with Nginx and Docker configurations.,,,,,,
+Skills,DevOps & Tools,Nginx,,,,,Configured Nginx as a reverse proxy and load balancer for optimized backend performance.,,,,,,
+Skills,DevOps & Tools,Kubernetes,,,,,Orchestrated containerized applications for scalable automated deployments.,,,,,,
+Skills,Front-end,React.js,,,,,"Developed dynamic, component-based UIs with React utilizing hooks and context.",,,,,,
+Skills,Front-end,Next.js,,,,,Built SEO-optimized server-side rendered React apps with Next.js and Vercel.,,,,,,
+Skills,Front-end,Vue.js,,,,,Created reactive performant UIs with Vue.js leveraging Vuex for state management.,,,,,,
+Skills,Front-end,Bootstrap,,,,,Applied Bootstrap for responsive layouts and component-based UI design.,,,,,,
+Skills,Front-end,TailwindCSS,,,,,"Utilized TailwindCSS for rapid, utility-first styling of responsive interfaces.",,,,,,
+Skills,Front-end,MUI,,,,,"Built accessible, customizable interfaces with Material UI for React applications.",,,,,,
+Skills,Front-end,Responsive Design,,,,,Designed cross-device compatible UIs using media queries and CSS frameworks.,,,,,,
+Skills,Databases,MySQL,,,,,Managed structured data storage and querying for full-stack applications.,,,,,,
+Skills,Databases,PostgreSQL,,,,,Leveraged PostgreSQL for transactional apps with advanced JSONB and indexing features.,,,,,,
+Skills,Databases,MongoDB,,,,,"Utilized MongoDB for flexible, schema-less NoSQL storage in real-time applications.",,,,,,
+Skills,Databases,DynamoDB,,,,,"Implemented AWS DynamoDB for scalable, serverless NoSQL data storage.",,,,,,
+Skills,Databases,Redis,,,,,"Used Redis for caching, job queues, and real-time pub/sub features.",,,,,,
+Skills,Testing & Debugging,Mocha,,,,,Wrote unit and integration tests for JavaScript applications using Mocha.,,,,,,
+Skills,Testing & Debugging,Chai,,,,,Utilized Chai for assertive BDD/TDD testing in Node.js environments.,,,,,,
+Skills,Testing & Debugging,Playwright,,,,,Conducted end-to-end testing with Playwright for cross-browser compatibility.,,,,,,
+Skills,Testing & Debugging,Debugging,,,,,Identified and resolved bugs using browser dev tools and VS Code debugger.,,,,,,
+Skills,Security,JWT Auth,,,,,Implemented secure stateless authentication with JWT in Node.js backends.,,,,,,
+Skills,Security,OAuth2,,,,,Integrated OAuth2 for secure Google/Facebook logins in web applications.,,,,,,
+Skills,Security,HTTPS/SSL,,,,,Enforced HTTPS and configured SSL certificates for secure production deployments.,,,,,,
+Skills,Security,Rate Limiting,,,,,Applied middleware like express-rate-limit to protect APIs from abuse.,,,,,,
+Skills,Back-end,WebSockets,,,,,Enabled real-time features like notifications in POS systems using WebSockets.,,,,,,
+Skills,Other Skills,Self-Learning,,,,,Proactively mastered new technologies through documentation and side projects.,,,,,,
+Experience,,Full Stack Developer,RingZero IT Services,2025-01-01,,Bangkok,"Developed POS systems, admin dashboards, and loyalty apps with Python testing tools.",,,,,,
+Experience,,Software Engineer,CloudE8 Pte Ltd,2024-04-01,2024-12-31,Singapore,"Customized ERPNext, built WhatsApp chatbot, and integrated Dialogflow and Stripe.",,,,,,
+Experience,,Full Stack Developer (Freelance),PLUS IMPACT Co.,2024-02-01,2024-04-30,Yangon,Delivered SEO-optimized web solutions using Nest.js,,,,,,
+Experience,,Frontend Developer,D3-SG Pte Ltd,2022-09-01,2024-02-28,Singapore,Built reusable React components and optimized secure multi-step forms.,,,,,,
+Experience,,Senior Backend Developer,Global New Wave Technology,2019-12-01,2022-08-31,Yangon,"Designed scalable REST APIs with JWT, Passport.js, and unit testing.",,,,,,
+Experience,,Junior Odoo Developer,Global Connect Asia,2019-08-01,2019-11-30,Yangon,Customized Odoo ERP modules and enhanced backend integrations.,,,,,,
+Experience,,Internship Program,Global Connect Asia,2019-05-01,2019-07-31,Yangon,Supported ERP development,debugging,and Agile sprint participation.,,,,
+Project,,TM2 Life Assurance,D3-SG,,,Singapore,"Modern insurance web app with TypeScript, React.js, and Next.js for responsive UX.",,,,,,
+Project,,Plus Talent,PLUS IMPACT,,,Yangon,"Job portal with search and blogs, Nest.js, and React.js.",built with TypeScript,,,,,
+Project,,Tun Yat,,,,,"Farm machinery rental app using TypeScript, Express.js, and MySQL for seamless UX.",,,,,,
+Project,,SarNarPar,,,,,"LMS mobile app with TypeScript, Node.js, MongoDB, and GraphQL for real-time features.",,,,,,
+Project,,MyHealthcare,,,,,"Telemedicine platform with JavaScript, Node.js, and MySQL, optimized for performance.",,,,,,
+Project,,Man Shwe Phyi,,,,,"Logistics ERP with Python, Odoo, and PostgreSQL, featuring custom receipt modules.",,,,,,
+Project,,Token Doctor,Freelance,,,Bangkok,"Hospital queue system with TypeScript, Nest.js, optimized for efficiency, and React.js",,,,,,
+Project,,POSEM,Freelance,,,Yangon,"Mobile POS and e-commerce platform with JavaScript, and MongoDB.",Node.js,,,,,
+Project,,Hyper POS,Self,,,Bangkok,Web-based POS with secure APIs and real-time WebSocket notifications.,,,,,,
+Languages,,Burmese,,,,,"Native proficiency in Burmese for reading, writing, and speaking.",,,,,,
+Languages,,English,,,,,Professional fluency in English for technical communication and documentation.,,,,,,
+Interests,,Football,,,,,Playing and watching football to foster teamwork and strategic thinking.,,,,,,
+Interests,,Reading,,,,,Regularly read tech blogs and books to stay current with industry trends.,,,,,,
+Interests,,Listening to Music,,,,,Listen to music to enhance focus and relaxation during coding sessions.,,,,,,
+GitHub Repo,,,,,,,,admin-lte-express,Admin dashboard with Express.js and React components.,JavaScript,0,0,2020-07-29
+GitHub Repo,,,,,,,,airframe-react,High-quality dashboard using Bootstrap 4 and React 16 for responsive UI.,JavaScript,0,0,2020-03-28
+GitHub Repo,,,,,,,,awesome-javascript,Curated collection of browser-side JavaScript libraries and resources.,JavaScript,0,0,2022-05-22
+GitHub Repo,,,,,,,,awesome-nestjs,Collection of resources and tools for the NestJS framework.,TypeScript,0,0,2022-06-21
+GitHub Repo,,,,,,,,awesome-react-native,Resources for React Native components,JavaScript,0,0,2021-11-03
+GitHub Repo,,,,,,,,batch-11-cdrs,Registration system for UCSMTLA convocation dinner using PHP.,PHP,0,0,2019-11-17
+GitHub Repo,,,,,,,,bootstrap-admin,Admin dashboard designed with Bootstrap 4 for responsive layouts.,PHP,0,0,2022-03-18
+GitHub Repo,,,,,,,,bulletproof-nodejs,Robust Node.js API implementation following best practices.,JavaScript,0,0,2022-04-17
+GitHub Repo,,,,,,,,burmese-measure,Conversion tool for Burmese units to Metric system.,TypeScript,0,0,2021-12-09
+GitHub Repo,,,,,,,,daisy-json-viewer,JSON viewer and formatter built with TypeScript for clean data visualization.,TypeScript,0,0,2025-06-27
+GitHub Repo,,,,,,,,design-patterns-php,Simple implementations of 23 GoF design patterns in PHP.,TypeScript,0,0,2020-10-11
+GitHub Repo,,,,,,,,developer-roadmap,Resources and roadmap for aspiring software developers.,,0,0,2022-07-02
+GitHub Repo,,,,,,,,disys-assesment-ts,Short URL maker tool developed for Disys assessment.,TypeScript,0,0,2023-05-08
+GitHub Repo,,,,,,,,ecommerce-react,E-commerce app with React,JavaScript,0,0,2022-03-29
+GitHub Repo,,,,,,,,erpnext-middleware,Middleware extensions for ERPNext platform integration.,JavaScript,0,0,2024-02-29
+GitHub Repo,,,,,,,,express-resmaker,Minimalist response helper package for Express.js applications.,JavaScript,0,0,2024-07-24
+GitHub Repo,,,,,,,,foodkapi-telebot,Telegram bot for quick food ordering with seamless integration.,JavaScript,0,0,2024-09-30
+GitHub Repo,,,,,,,,go-ginapi-starter,Go starter template with Gin,Go,0,0,2025-06-06
+GitHub Repo,,,,,,,,graphql-examples,GraphQL examples using TypeGraphQL and GraphQL-Yoga.,JavaScript,0,0,2022-07-11
+GitHub Repo,,,,,,,,inventory-demo,Inventory management demo with JavaScript and REST APIs.,JavaScript,0,0,2023-11-23
+GitHub Repo,,,,,,,,fastapi-crud,CRUD API template using FastAPI and PostgreSQL with async support.,Python,0,0,2025-07-20
+GitHub Repo,,,,,,,,vue-dashboard,Responsive admin dashboard built with Vue.js and TailwindCSS.,JavaScript,0,0,2025-08-10
+GitHub Repo,,,,,,,,healthtrack-app,Health monitoring app with Vue.js and Nest.js for real-time dashboards.,TypeScript,0,0,2025-09-15
