@@ -11,16 +11,15 @@ from core.config import config
 from core.limiter import limiter
 from core.scheduler import scheduler
 
-
-from app.features.chat.open_ai import await_chat_cli
-from app.controllers.auto_loader import load_api_routers
+from app.features.chat.open_ai import openai_cli
+from app.controllers._loader import load_routers
 from app.databases.event_listener import event_listeners
+from app.schedulers.greeting_job import say_greeting_job
 from app.middlewares.watch_dog import WatchDogMiddleware
-from app.schedulars.greeting_job import say_greeting_job
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # await await_chat_cli()
+    # await openai_cli()
     event_listeners()
     say_greeting_job()
     scheduler.start()
@@ -42,7 +41,7 @@ app.add_middleware(
 app.add_middleware(SlowAPIMiddleware)
 app.add_middleware(WatchDogMiddleware)
 
-for prefix, router in load_api_routers():
+for prefix, router in load_routers():
     app.include_router(router, prefix=prefix)
 
 if __name__ == "__main__":

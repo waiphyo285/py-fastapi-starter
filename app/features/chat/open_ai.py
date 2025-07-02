@@ -5,7 +5,7 @@ from core.logger import logger
 
 openai.api_key = config.openai_key
 
-def await_chat_cli():
+def openai_cli():
     logger.info("💬 ChatGPT CLI (type 'exit' to quit)\n")
     messages = [{"role": "system", "content": "You are a helpful assistant."}]
 

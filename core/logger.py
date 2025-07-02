@@ -3,7 +3,7 @@ import colorlog
 
 # Configure the logger
 def configure_logger():
-    logger = logging.getLogger("agent_logger")
+    logger = logging.getLogger("Logger")
     logger.setLevel(logging.DEBUG)
     
     # Create a console handler
