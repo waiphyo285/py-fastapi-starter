@@ -16,6 +16,7 @@ from app.controllers._loader import load_routers
 from app.databases.event_listener import event_listeners
 from app.schedulers.greeting_job import say_greeting_job
 from app.middlewares.watch_dog import WatchDogMiddleware
+from app.middlewares.response import ResponseMiddleware
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -40,6 +41,7 @@ app.add_middleware(
 )
 app.add_middleware(SlowAPIMiddleware)
 app.add_middleware(WatchDogMiddleware)
+app.add_middleware(ResponseMiddleware)
 
 for prefix, router in load_routers():
     app.include_router(router, prefix=prefix)

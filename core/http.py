@@ -26,13 +26,10 @@ class HttpClient:
             response.raise_for_status()
             return response
         except HTTPStatusError as e:
-            print(f"HTTP status error occurred {url}: {e}")
             raise
         except RequestError as e:
-            print(f"Request error occurred {url}: {e}")
             raise
         except Exception as e:
-            print(f"Unexpected error occurred {url}: {e}")
             raise
 
     async def get(self, endpoint: str, params: Optional[Dict[str, str]] = None) -> Response:

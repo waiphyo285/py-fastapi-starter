@@ -13,5 +13,4 @@ def load_routers() -> list[tuple[str, APIRouter]]:
             module = importlib.import_module(module_name)
             if hasattr(module, "router"):
                 routers.append(('/api', module.router))
-    print(f"Loaded {len(routers)} routers from {api_path}")
     return routers

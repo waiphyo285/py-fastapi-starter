@@ -14,7 +14,7 @@ class Configuration:
     whitelist_urls: str = os.getenv("WHITELIST_IPS","http://localhost:3000,http://localhost:3001").split(",")
 
     jwt_algo: str = os.getenv("JWT_ALGO", "HS256")
-    jwt_secrect: str = os.getenv("JWT_SECRET", "super_secret_xxx")
+    jwt_secret: str = os.getenv("JWT_SECRET", "super_secret_xxx")
     jwt_expires_min: str = os.getenv("JWT_EXPIRES_MIN", 30)
 
     openai_key: str = os.getenv("OPENAI_KEY", "sk-proj-xxx")
