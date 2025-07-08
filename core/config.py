@@ -1,23 +1,37 @@
 import os
-import json
-
+from typing import List
+from pydantic import Field, SecretStr, PositiveInt, HttpUrl
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from dotenv import load_dotenv
 
-load_dotenv()  # Load from .env file
 
-class Configuration:
-    debug: bool = os.getenv("DEBUG", "False") == "True"
-    project_name: str = os.getenv("PROJECT_NAME", "FastAPI App")
-    project_version: str = os.getenv("PROJECT_VERSION", "1.0.0")  
+load_dotenv()
 
-    mock_api_url: str = os.getenv("MOCK_API_URL", "https://jsonplaceholder.typicode.com")
-    whitelist_urls: str = os.getenv("WHITELIST_IPS","http://localhost:3000,http://localhost:3001").split(",")
+class Settings(BaseSettings):
+    """
+    Configuration settings loaded exclusively from environment variables.
+    All fields are required as no default values are provided.
+    """
+    model_config = SettingsConfigDict(
+        env_file='.env',
+        env_file_encoding='utf-8',
+        extra='ignore'
+    )
 
-    jwt_algo: str = os.getenv("JWT_ALGO", "HS256")
-    jwt_secret: str = os.getenv("JWT_SECRET", "super_secret_xxx")
-    jwt_expires_min: str = os.getenv("JWT_EXPIRES_MIN", 30)
+    # General Settings 
+    debug: bool = Field(description="Enable debug mode.")
+    project_name: str = Field(description="Name of the project.")
+    project_version: str = Field(description="Version of the project.")
 
-    openai_key: str = os.getenv("OPENAI_KEY", "sk-proj-xxx")
+    # JWT Settings 
+    jwt_algo: str = Field(description="Algorithm for JWT signing.")
+    jwt_secret: SecretStr = Field(description="Secret key for JWT signing.") 
+    jwt_expires_min: PositiveInt = Field(description="JWT expiration time in minutes.") 
 
+    # OpenAI Settings 
+    openai_key: SecretStr = Field(description="OpenAI API key.")
+    
+    # Whitelist URLs
+    whitelist_ips: str = Field(description="Allowed origin URLs for CORS.")
 
-config = Configuration()
+config = Settings()
