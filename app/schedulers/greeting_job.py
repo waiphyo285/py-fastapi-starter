@@ -1,7 +1,7 @@
 from core.logger import logger
 from core.scheduler import start_scheduler
 
-def say_greeting_job():
+def do_greeting_job():
     config = {"task_name": "Sawadee Krub!"}
 
     # Every day at 02:00 AM

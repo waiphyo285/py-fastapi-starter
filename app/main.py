@@ -14,7 +14,7 @@ from core.scheduler import scheduler
 from app.features.chat.open_ai import openai_cli
 from app.controllers._loader import load_routers
 from app.databases.event_listener import event_listeners
-from app.schedulers.greeting_job import say_greeting_job
+from app.schedulers.greeting_job import do_greeting_job
 from app.middlewares.watch_dog import WatchDogMiddleware
 from app.middlewares.response import ResponseMiddleware
 
@@ -22,7 +22,7 @@ from app.middlewares.response import ResponseMiddleware
 async def lifespan(app: FastAPI):
     # await openai_cli()
     event_listeners()
-    say_greeting_job()
+    do_greeting_job()
     scheduler.start()
     yield
     scheduler.shutdown()
