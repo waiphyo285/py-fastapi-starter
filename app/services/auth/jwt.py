@@ -3,10 +3,9 @@ from jose import JWTError, jwt
 from datetime import datetime, timedelta
 
 from core.config import config
-from app.utils.response import respond_error
 
 JWT_ALGO =  config.jwt_algo
-JWT_SECRET = config.jwt_secret
+JWT_SECRET = config.jwt_secret.get_secret_value()
 JWT_EXPIRES_MIN = config.jwt_expires_min
 
 def create_token(data: dict, expires_delta: timedelta | None = None):
